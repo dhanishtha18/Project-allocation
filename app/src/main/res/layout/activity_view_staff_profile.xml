@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    android:background="#e1f5fe"
+        tools:context=".ViewStaffProfileActivity">
+<include
+    layout="@layout/toolbar"/>
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/user_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/profile" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/login"
+        android:drawablePadding="5dp"
+        android:enabled="false"
+        android:hint="Name"
+        android:inputType="text"
+        style="@style/edittext"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/department"
+            android:drawablePadding="5dp"
+            style="@style/edittext"
+            android:id="@+id/user_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Department"
+            android:enabled="false"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/info"
+            android:drawablePadding="5dp"
+            style="@style/edittext"
+            android:id="@+id/user_login_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="5dp"
+            style="@style/edittext"
+            android:id="@+id/user_phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Enter Your Phone No"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:enabled="false"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="5dp"
+            style="@style/edittext"
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:enabled="false"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/info"
+            android:drawablePadding="5dp"
+            style="@style/edittext"
+            android:id="@+id/user_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Enter Your Field"
+            android:inputType="textEmailAddress"
+            android:enabled="false"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/subjects"
+            android:drawablePadding="5dp"
+            style="@style/edittext"
+            android:id="@+id/user_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Enter Your Subjects"
+            android:inputType="textMultiLine"
+            android:enabled="false"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/qualifications"
+            android:drawablePadding="5dp"
+            style="@style/edittext"
+            android:id="@+id/user_qualification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Enter Your Qualifications"
+            android:inputType="textMultiLine"
+            android:enabled="false"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/experience"
+            android:drawablePadding="5dp"
+            style="@style/edittext"
+            android:id="@+id/user_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Enter Your Work Experience"
+            android:inputType="textMultiLine"
+            android:enabled="false"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/user_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/btn"
+                android:text="Edit" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tl"
+            android:visibility="gone"
+            android:layout_marginTop="10dp">
+            <TableRow>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/subject_add"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/btn"
+                    android:text="Add Subject"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/subject_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                   style="@style/btn"
+                    android:text="Delete Subject"
+                    android:layout_weight="1"/>
+            </TableRow>
+        </TableLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>

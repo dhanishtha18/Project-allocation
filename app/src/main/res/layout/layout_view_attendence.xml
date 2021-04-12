@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textview"
+                android:id="@+id/student_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:gravity="center"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        style="@style/textview"
+                        android:id="@+id/roll"
+                        android:text="roll"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        style="@style/textview"
+                        android:id="@+id/enroll"
+                        android:text="enroll"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow
+                    android:paddingTop="10dp"
+                    android:gravity="center_horizontal">
+                    <az.plainpie.PieView
+                        android:id="@+id/pieView"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:inner_pie_padding="30"
+                        app:inner_text_visibility="true"
+                        app:percentage="30"
+                        app:percentage_size="50" />
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_weight="1"
+                        android:layout_height="150dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/textview"
+                            android:id="@+id/present"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Finished"
+                            android:paddingTop="10dp"
+                            android:drawablePadding="5dp"
+                            android:drawableLeft="@drawable/present"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/textview"
+                            android:id="@+id/absent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="To be done"
+                            android:paddingTop="10dp"
+                            android:drawablePadding="5dp"
+                            android:drawableLeft="@drawable/absent"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/textview"
+                            android:id="@+id/status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="status"
+                            android:paddingTop="10dp"
+                            android:drawablePadding="5dp"
+                            android:drawableLeft="@drawable/present"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </TableRow>
+            </TableLayout>
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

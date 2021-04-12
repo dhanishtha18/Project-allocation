@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1f5fe">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/bar_layout"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar_layout"
+        android:layout_above="@id/bottom"
+        android:visibility="visible"/>
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/img_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar_layout"
+        android:layout_above="@id/bottom"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/edittext"
+            android:id="@+id/text_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type a message...."
+            android:layout_toLeftOf="@id/btn_doc"
+            android:layout_centerVertical="true"
+            android:layout_margin="0dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_doc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/btn_send"
+            android:background="@drawable/attach"
+            android:layout_marginRight="10dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_menu_send"/>
+    </RelativeLayout>
+
+</RelativeLayout>

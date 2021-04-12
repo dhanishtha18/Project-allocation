@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#9b1d34</item>
+        <item name="colorPrimaryDark">#9b1d34</item>
+        <item name="colorAccent">#D81B60</item>
+        <item name="actionOverflowButtonStyle">@style/overflow</item>
+    </style>
+
+<style name="overflow" parent="Widget.AppCompat.Light.ActionButton">
+    <item name="android:src">@drawable/menu_icon</item>
+</style>
+
+    <style name="AppTheme.ActionBarForCropping" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#9b1d34</item>
+        <item name="colorPrimaryDark">#9b1d34</item>
+        <item name="colorAccent">#D81B60</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+    </style>
+
+    <style name="textview">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="spinner" >
+        <item name="android:popupBackground">#CFD8DC</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@drawable/edittext</item>
+        <item name="android:spinnerMode">dialog</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:background">@drawable/buttons</item>
+    </style>
+
+
+    <style name="edittext">
+        <item name="android:textColorHint">#90a4ae</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:background">@drawable/edittext</item>
+    </style>
+
+
+</resources>

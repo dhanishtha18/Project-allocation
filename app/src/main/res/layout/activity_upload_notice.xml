@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1f5fe"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        style="@style/edittext"
+        android:id="@+id/notice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Notice Title"
+        android:inputType="textMultiLine" />
+
+    <uk.co.senab.photoview.PhotoView
+        android:background="@drawable/edittext"
+        style="@style/edittext"
+        android:id="@+id/image_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <TableRow>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                style="@style/btn"
+                android:id="@+id/select_file"
+                android:text="Select Notice File"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                style="@style/btn"
+                android:background="@drawable/buttons"
+                android:id="@+id/upload_notice_btn"
+                android:text="Upload Notice"
+                android:layout_weight="1"/>
+
+        </TableRow>
+    </TableLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>

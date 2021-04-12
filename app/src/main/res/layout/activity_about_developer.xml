@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutCollegeActivity"
+    android:background="#e1f5fe">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e1f5fe"
+            android:layout_margin="7dp"
+            android:padding="8dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#e1f5fe"
+                android:padding="2dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="rait"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:text="Developed by:"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginTop="20dp"
+                    style="@style/textview"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Computer Department" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="Batch 2018-2022" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginTop="20dp"
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="1. Rutuja Nale" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="\t\tPhone: +919875465864" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="\t\tEmail: rutunale28@gmail.com" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginTop="30dp"
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="2. Komal Patil" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="\t\tPhone: +919833744708" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="\t\tEmail: komalpatil1820@gmail.com" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginTop="20dp"
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="3. Dhanishtha Patil" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="\t\tPhone: +918830081411" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="\t\tEmail: dhanishtha1804@gmail.com" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginTop="20dp"
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="4. Gayatri Thakur" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="\t\tPhone: +918830081411" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="\t\tEmail: gayatrithakur@gmail.com" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginTop="20dp"
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="5. Urvi Zope" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="\t\tPhone: +918830081411" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="\t\tEmail: urvizope1@gmail.com" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginTop="20dp"
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="6. Siddhi Karambelkar" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="\t\tPhone: +918830081411" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="\t\tEmail: karambelkarsiddhi@gmail.com" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginTop="20dp"
+                    style="@style/textview"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Under Guidance Of:" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="Dr. Leena Ragha and Ms. Smita Patil" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textview"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="HOD and Proff. Computer Department" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

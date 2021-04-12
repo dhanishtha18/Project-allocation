@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    android:background="#e1f5fe"
+        tools:context=".ViewStudentProfileActivity">
+
+    <include
+        layout="@layout/toolbar"/>
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        android:padding="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/user_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/profile" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/login"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Enter Your Name"
+                android:inputType="text"
+                android:enabled="false"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/department"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/user_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/department"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/user_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"/>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/info"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/user_enrollment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Enter Your Enrollment No"
+                android:inputType="number"
+                android:maxLength="10"
+                android:enabled="false"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/info"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/user_roll_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Enter Your Roll No"
+                android:inputType="number"
+                android:maxLength="2"
+                android:enabled="false"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/user_phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Enter Your Phone No"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:enabled="false"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/parent_phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Enter Parent Phone No"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:enabled="false"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Enter Your Email"
+                android:inputType="textEmailAddress"
+                android:enabled="false"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/info"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/user_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Enter Your Skills"
+                android:inputType="textEmailAddress"
+                android:enabled="false"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/info"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/sem1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Enter Semester 1 Marks"
+                android:inputType="numberDecimal"
+                android:enabled="false" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/info"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/sem2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Enter Semester 2 Marks"
+                android:inputType="numberDecimal"
+                android:enabled="false"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/info"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/sem3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Enter Semester 3 Marks"
+                android:inputType="numberDecimal"
+                android:enabled="false"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/info"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/sem4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Enter Semester 4 Marks"
+                android:inputType="numberDecimal"
+                android:enabled="false"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/info"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/sem5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Enter Semester 5 Marks"
+                android:inputType="numberDecimal"
+                android:enabled="false"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableLeft="@drawable/info"
+                android:drawablePadding="5dp"
+                style="@style/edittext"
+                android:id="@+id/sem6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Enter Semester 6 Marks"
+                android:inputType="numberDecimal"
+                android:enabled="false"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/user_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/btn"
+                android:text="Edit" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>

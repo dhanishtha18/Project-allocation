@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentTestMarksActivity"
+    android:orientation="vertical">
+
+<include
+    layout="@layout/toolbar"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#e1f5fe">
+            <androidx.appcompat.widget.AppCompatSpinner
+                style="@style/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/student_subject"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        style="@style/textview"
+                        android:text="Seat No."
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="0dp"
+                        style="@style/edittext"
+                        android:id="@+id/seat"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:enabled="false"/>
+                </TableRow>
+                <TableRow>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        style="@style/textview"
+                        android:text="Unit Test 1"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="0dp"
+                        style="@style/edittext"
+                        android:id="@+id/ut1"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:enabled="false"/>
+                </TableRow>
+                <TableRow>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        style="@style/textview"
+                        android:text="Unit Test 2"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="0dp"
+                        style="@style/edittext"
+                        android:id="@+id/ut2"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:enabled="false"/>
+                </TableRow>
+                <TableRow>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        style="@style/textview"
+                        android:text="Unit Test Average"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="0dp"
+                        style="@style/edittext"
+                        android:id="@+id/avg_ut"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:enabled="false"/>
+                </TableRow>
+                <TableRow>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        style="@style/textview"
+                        android:text="Micro-Project Group"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="0dp"
+                        style="@style/edittext"
+                        android:id="@+id/group"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:enabled="false"/>
+                </TableRow>
+                <TableRow>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        style="@style/textview"
+                        android:text="Micro-Project Individual"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="0dp"
+                        style="@style/edittext"
+                        android:id="@+id/individual"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:enabled="false"/>
+                </TableRow>
+                <TableRow>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        style="@style/textview"
+                        android:text="Micro-Project Total"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="0dp"
+                        style="@style/edittext"
+                        android:id="@+id/micro"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:enabled="false"/>
+                </TableRow>
+                <TableRow>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        style="@style/textview"
+                        android:text="Total (Out of 30)"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="0dp"
+                        style="@style/edittext"
+                        android:id="@+id/total"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:enabled="false"/>
+                </TableRow>
+            </TableLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                style="@style/btn"
+                android:text="Edit"
+                android:id="@+id/edit"
+                android:drawableLeft="@drawable/edit"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

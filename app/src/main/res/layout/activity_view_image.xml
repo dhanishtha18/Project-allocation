@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1f5fe">
+    <TableRow
+        android:layout_weight="1"
+        android:id="@+id/tr">
+        <uk.co.senab.photoview.PhotoView
+            android:background="@drawable/edittext"
+            android:id="@+id/image_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </TableRow>
+    <TableRow>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            style="@style/btn"
+            android:id="@+id/notice_download"
+            android:text="Download"
+            android:layout_weight="1"/>
+    </TableRow>
+</TableLayout>

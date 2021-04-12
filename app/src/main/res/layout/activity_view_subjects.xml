@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:background="#e1f5fe"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1f5fe"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/bar"
+        layout="@layout/toolbar"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/subject_semester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinner"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subjects_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext">
+
+        </androidx.recyclerview.widget.RecyclerView>
+</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

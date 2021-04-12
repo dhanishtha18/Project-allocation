@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatSpinner
+        style="@style/spinner"
+        android:id="@+id/staff_semester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/staff_semester">
+        <TableRow>
+            <androidx.appcompat.widget.AppCompatSpinner
+                style="@style/spinner"
+                android:id="@+id/staff_subjects"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                style="@style/spinner"
+                android:id="@+id/staff_subject_hours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

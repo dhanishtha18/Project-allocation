@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/about_college"
+            android:icon="@drawable/department"
+            android:title="About College" />
+    </group>
+    <item android:title="Login">
+        <menu>
+        <item
+            android:id="@+id/login_student"
+            android:icon="@drawable/login"
+            android:title="Student Login" />
+        <item
+            android:id="@+id/login_lecturer"
+            android:icon="@drawable/login"
+            android:title="Lecturer Login" />
+
+        <item
+            android:id="@+id/login_hod"
+            android:icon="@drawable/login"
+            android:title="H.O.D Login" />
+        </menu>
+    </item>
+
+    <item android:title="Departments">
+        <menu>
+            <item
+                android:id="@+id/computer"
+                android:icon="@drawable/department"
+                android:title="Computer Department" />
+            <item
+                android:id="@+id/chemical"
+                android:icon="@drawable/department"
+                android:title="EXTC Department" />
+
+            <item
+                android:id="@+id/it"
+                android:icon="@drawable/department"
+                android:title="IT Department" />
+
+            <item
+                android:id="@+id/civil1st"
+                android:icon="@drawable/department"
+                android:title="ETRX Department" />
+
+            <item
+                android:id="@+id/civil2nd"
+                android:icon="@drawable/department"
+                android:title="Instrumentation Department" />
+            <item
+                android:id="@+id/mechanical1st"
+                android:icon="@drawable/department"
+                android:title="Mechanical Department 1st Shift" />
+
+            <item
+                android:id="@+id/mechanical2nd"
+                android:icon="@drawable/department"
+                android:title="Mechanical Department 2nd Shift" />
+
+            <item
+                android:id="@+id/tr"
+                android:icon="@drawable/department"
+                android:title="Travel And Tourism Department" />
+
+
+
+
+
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/contact_us"
+                android:icon="@drawable/contact"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Feedback" />
+        </menu>
+    </item>
+
+</menu>

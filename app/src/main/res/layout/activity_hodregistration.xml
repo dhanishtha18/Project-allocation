@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1f5fe"
+    tools:context=".HODRegistrationActivity">
+
+    <include
+        android:id="@+id/bar"
+        layout="@layout/toolbar"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:drawableLeft="@drawable/login"
+        style="@style/edittext"
+        android:id="@+id/hod_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter H.O.D Full Name"
+        android:layout_below="@id/bar"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:drawableLeft="@drawable/phone"
+        style="@style/edittext"
+        android:id="@+id/hod_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:hint="Enter H.O.D Phone No."
+        android:layout_below="@id/hod_name"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:drawableLeft="@drawable/email"
+        style="@style/edittext"
+        android:id="@+id/hod_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Enter H.O.D Email Address"
+        android:layout_below="@id/hod_phone"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        style="@style/spinner"
+        android:id="@+id/hod_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hod_email"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="40dp"
+        style="@style/btn"
+        android:id="@+id/hod_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register H.O.D"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/hod_department"/>
+
+
+</RelativeLayout>

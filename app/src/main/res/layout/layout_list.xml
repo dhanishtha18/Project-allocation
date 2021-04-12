@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A000000"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="15dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Delete Projects"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Tap On Project to delete"
+            android:paddingTop="5dp"/>
+    <ListView
+        android:background="@drawable/edittext"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+        <TableRow>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel"
+                android:text="Cancel"
+                android:textColor="#9b1d34"
+                android:background="@android:color/transparent"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/done"
+                android:text="Done"
+                android:textColor="#9b1d34"
+                android:background="@android:color/transparent"/>
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>
+</LinearLayout>

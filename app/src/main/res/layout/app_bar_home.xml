@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#BA0E28"
+            fab:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Department"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        fab:menu_colorNormal="#C5132E"
+        fab:menu_colorPressed="#bbdefb"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_animationDelayPerItem="30"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_icon="@drawable/back"
+        fab:menu_labels_position="left">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/upload_college_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_file_upload_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_label="Upload College Notice"
+            fab:fab_colorNormal="#90caf9"
+            fab:fab_colorPressed="#bbdefb"
+            android:visibility="gone"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/upload_department_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_file_upload_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_label="Upload Department Notice"
+            fab:fab_colorNormal="#90caf9"
+            fab:fab_colorPressed="#bbdefb"
+            android:visibility="gone"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/upload_document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_file_upload_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_label="Upload Document"
+            fab:fab_colorNormal="#90caf9"
+            fab:fab_colorPressed="#bbdefb"
+            android:visibility="gone"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/upload_study_resources"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_file_upload_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_label="Upload Study Resources"
+            fab:fab_colorNormal="#90caf9"
+            fab:fab_colorPressed="#bbdefb"
+            android:visibility="gone"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/uploadhodstaffnotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_file_upload_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_label="Upload Staff Notice"
+            fab:fab_colorNormal="#90caf9"
+            fab:fab_colorPressed="#bbdefb"
+            android:visibility="gone"/>
+
+    <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/uploadprincipalhodnotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_file_upload_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_label="Upload H.O.D Notice"
+            fab:fab_colorNormal="#90caf9"
+            fab:fab_colorPressed="#bbdefb"
+            android:visibility="gone"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

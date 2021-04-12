@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StaffRegistrationActivity"
+    android:background="#e1f5fe">
+
+    <include
+        android:id="@+id/bar"
+        layout="@layout/toolbar"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:drawableLeft="@drawable/login"
+        android:drawablePadding="5dp"
+        style="@style/edittext"
+        android:id="@+id/staff_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Staff Full Name"
+        android:layout_below="@id/bar"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="5dp"
+        style="@style/edittext"
+        android:id="@+id/staff_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:hint="Enter Staff Phone No."
+        android:layout_below="@id/staff_name" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="5dp"
+        style="@style/edittext"
+        android:id="@+id/staff_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Staff Email Address"
+        android:layout_below="@id/staff_phone" />
+
+
+    <RadioGroup
+        style="@style/edittext"
+        android:id="@+id/mode"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/staff_email"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:padding="25dp"
+            android:id="@+id/mdtext"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select:"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/permanent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permanent" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visitor"
+            android:layout_marginLeft="10dp"/>
+    </RadioGroup>
+    <androidx.appcompat.widget.AppCompatSpinner
+        style="@style/spinner"
+        android:id="@+id/staff_semester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mode"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        style="@style/spinner"
+        android:id="@+id/staff_subjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/staff_subject_hours"
+        android:layout_below="@id/staff_semester"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        style="@style/spinner"
+        android:id="@+id/staff_subject_hours"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/staff_semester"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/btn"
+        android:id="@+id/staff_add_subjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/staff_subject_hours"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@id/staff_register"
+        android:text="Add More Subject" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/btn"
+        android:id="@+id/staff_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/staff_subject_hours"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:text="Register Staff" />
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#e1f5fe"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        style="@style/spinner"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/resource_semester"/>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        style="@style/spinner"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:id="@+id/resource_subject"/>
+
+                </TableRow>
+            </TableLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                style="@style/edittext"
+                android:id="@+id/resource_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Project Description"
+                android:inputType="textMultiLine" />
+
+            <uk.co.senab.photoview.PhotoView
+                android:id="@+id/resource_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                style="@style/edittext"
+                android:id="@+id/resource_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Url"
+                android:inputType="textUri"
+                android:visibility="gone"/>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/btn"
+                        android:layout_width="0dp"
+                        android:id="@+id/select_file"
+                        android:text="Select Resource File"
+                        android:layout_weight="1"
+                        android:visibility="gone"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/btn"
+                        android:layout_width="0dp"
+                        android:id="@+id/upload_resource_btn"
+                        android:text="Upload Resource"
+                        android:layout_weight="1"
+                        android:visibility="gone"/>
+
+                </TableRow>
+            </TableLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

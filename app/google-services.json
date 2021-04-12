@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "873879586627",
+    "project_id": "raitandroidapplication-master",
+    "storage_bucket": "raitandroidapplication-master.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873879586627:android:7cc1dd1ef2c7cb16d391f6",
+        "android_client_info": {
+          "package_name": "org.projectapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873879586627-5eko4ggq3692o0kk3h18n1jbsd8ifq03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1UMZGEXsM5yl6oq1hLb7wXUi9zeQeViQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873879586627-5eko4ggq3692o0kk3h18n1jbsd8ifq03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
